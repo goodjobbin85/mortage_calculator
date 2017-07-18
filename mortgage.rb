@@ -1,8 +1,11 @@
 #calculate balance after 12 months on a loan if only minimum payments are made.
-#here min payments are assumed to be 2%
-min_pay = 0.02
+
+
 puts "What is the balance on your account?"
 balance = gets.chomp.to_f
+
+puts "What is the minimum monthly payment, as a decimal?"
+min_pay = gets.chomp.to_f
 
 puts "what is the APR?"
 apr = gets.chomp.to_f
@@ -27,6 +30,7 @@ total_months.times do
 	puts "Remaining balance: #{balance.round(2)}"
 end
 
+puts "*" * 10
 puts "AFTER #{total_months} MONTHS, YOUR REMAINING BALANCE IS #{balance.round(2)}"
 
 
